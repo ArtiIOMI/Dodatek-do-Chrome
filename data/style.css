@@ -1,0 +1,40 @@
+#kontener
+{
+	width: 300px; 
+	max-height: 200px;
+	font-family: 'Lato', sans-serif;
+	background-image: url("img/back.png");
+}
+
+#title
+{
+	height: 25px;
+	background-color: white;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+}
+
+#kontent
+{
+	max-height:170px;
+	text-align: center;
+}
+
+#stopka
+{
+	height: 30px;
+	padding-top: 5px;
+	border-top: 2px solid #ffffff;
+}
+
+#strona
+{
+	float: left;
+	margin-left: 10px;
+}
+
+#ikony
+{	
+	float: left;
+	margin-left: 90px;
+}
