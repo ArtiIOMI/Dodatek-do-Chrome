@@ -1,0 +1,40 @@
+﻿{
+	"name": "Zew Łosia",
+	"description": "Rozszerzenia powiadamiajace o aktywnosci streamu Losia",
+	"version": "1.4.2",
+	"author":"Artur Artiom Lorkowski",
+	"manifest_version": 2,
+	"background": {"page":"background.html"},
+	"options_page": "options.html",
+	"web_accessible_resources": ["data/img/icon_48.png"],
+	
+	"icons": {
+		"32": "data/img/icon_32.png",
+		"48": "data/img/icon_48.png",
+		"64": "data/img/icon_64.png",
+		"128": "data/img/icon_128.png"
+	},
+	
+	"browser_action": 
+	{
+		"default_icon": "data/img/icon_48.png",
+		"default_title": "Zew Łosia",
+		"default_popup": "popup.html"
+	},
+	
+	"homepage_url": "http://www.losiugra.pl/",
+	
+	"permissions": 
+	[
+		"notifications",
+		"http://www.hitbox.tv/losiugra",
+		"http://api.hitbox.tv/user/losiugra"
+	],
+	
+	"content_scripts": 
+	[ 
+		{"js": [ "jquery.min.js", "data/script.js", "background.js", "popup.js" ],
+		"css": ["data/style.css"], 
+		"matches": [ "http://api.hitbox.tv/user/losiugra"]}
+	]
+}

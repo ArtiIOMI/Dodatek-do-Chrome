@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Ustawienia</title>
+    <link href="data/styleopt.css" rel="stylesheet" type="text/css">
+	<link rel="manifest" href="manifest.json">
+	<script src="jquery.min.js"></script>
+    <script src="options.js"></script>
+	<style>
+		table tbody tr td {
+			border:1px dashed #000;
+			text-align:center;
+			padding:15px;
+		 }
+	</style>
+  </head>
+  <body>
+    <h1>
+      <img src="data/img/icon_64.png" alt="Toast">
+      Ustawienia powiadomien
+    </h1>
+    <h2>Opcje</h2>
+    <form id="options">
+		<table>
+			<tr>
+				<td><b>Włącz/Wyłącz powiadomienia dźwiękowe:</b></td>
+				<td><input type="checkbox" name="isMusic" checked></td>
+			</tr>
+			<tr>
+				<td><b>Poziom głośności dźwięku powiadomienia:</b></td> 
+				<td><select name="glosnosc">
+				<option>5</option>
+				<option>10</option><option>20</option><option>30</option>
+				<option>40</option><option>50</option><option>60</option>
+				<option>70</option><option>80</option><option>90</option>
+				<option>100</option>
+				<br><br/>
+				</select>%</td>
+			</tr>
+			<tr>
+				<td><b>Częstotliwość sprawdzania aktywności streamu:</b></td>
+				<td><select name="frequency">
+				<option>1</option><option>2</option><option>3</option>
+				<option>4</option><option>5</option><option>10</option>
+				<option>15</option><option>20</option><option>25</option>
+				<option>30</option>
+				<br><br/>
+				</select>min.</td>
+			</tr>
+		</table>
+    </form>
+  </body>
+</html>
